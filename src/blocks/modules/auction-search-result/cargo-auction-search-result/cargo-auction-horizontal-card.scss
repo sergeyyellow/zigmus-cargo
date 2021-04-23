@@ -1,0 +1,80 @@
+.auction-search-result-horizontal-card{
+    display: block;
+    height: 275px;
+    &__top {
+        display: flex;
+    }
+
+    &__lower {
+        display: flex;
+        height: 99px;
+        background: #F5F9FF;
+        border-radius: 0px 0px 9px 9px;
+        justify-content: space-between;
+        align-items: center;
+
+        &-bet-info {
+            padding-left: 25px;
+            & h5 {
+                margin-bottom: 10px;
+            }
+        }
+
+        &-bet-rates p {
+            margin-bottom: 5px;
+            font-size: 12px;
+        }
+    }
+
+    &__lower a {
+        font-size: 10px;
+        opacity: 0.4;
+        text-decoration: underline;
+        margin-right: 25px;
+    }
+
+    &__bet-btn,
+    &__buy-all-btn {
+        font-size: 12px;
+        width: 176px;
+        height: 39px;
+        border-radius: 8px;
+        color: #fff;
+        background: #FF6118;
+    }
+
+    &__buy-all-btn {
+        color: #236EFF;
+        background: none;
+        border: 1px solid #236EFF;
+    }
+
+    & .horizontal-order-card__column {
+        padding-bottom: 34px;
+    }
+
+    &__head {
+        justify-content: space-between;
+    }
+
+    &__details-btn {
+        color: #236EFF;
+        font-size: 12px;
+        width: 223px;
+        height: 39px;
+        border: 1px solid #236EFF;
+        border-radius: 4px;
+        font-weight: 600px;
+        margin-left: 7px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    &__settings-btn {
+        margin-left: auto;
+    }
+}
+
+.transport-auction-card {
+    height: 322px;
+}

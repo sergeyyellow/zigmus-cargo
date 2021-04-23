@@ -1,0 +1,140 @@
+.order-card {
+    background: #ffffff;
+    border: 1px solid rgba(35, 110, 255, 0.3);
+    border-radius: 8px;
+
+    // .order-card__header
+
+    &__header {
+        @include flex;
+        align-items: center;
+        padding: 0 10px;
+        margin-bottom: 10px;
+        padding-top: 15px;
+
+        @media (max-width: 575px) {
+            padding: 0 7px;
+            margin-bottom: 7px;
+        }
+    }
+
+
+    &__footer {
+        @include flex;
+        padding-bottom: 15px;
+    }
+
+   
+}
+
+.transport-order-card {
+    
+    // &__path-items {
+    //     border: none;
+    // }
+
+    &__title {
+        padding-left: 0;
+    }
+
+    &__label {
+        width: 140px;
+        height: 22px;
+        align-items: center;
+        display: flex;
+        padding-left: 20px;
+        position: relative;
+        &::before {
+            position: absolute;
+            left: 5px;
+        }
+    }
+
+    &__cities-descr {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__city-descr {
+        padding-top: 5px;
+    }
+
+    &__city-descr input {
+        width: 57px;
+        font-size: 10px;
+        display: block;
+        padding: 3px;
+    }
+
+    &__path-link {
+        text-decoration: none;
+        font-size: 11px;
+        color: #236EFF;
+        padding-top: 7px;
+    }
+    
+    &__info-car li {
+        position: relative;
+    }
+
+    &__info-documents li {
+        padding-left: 16px;
+    }
+
+    &__info-car li:nth-child(7) {
+        margin-top: 5px;
+    }
+
+    &__documents::before {
+        content: url(../img/icons/documents.svg);
+        width: 11px;
+        height: 11px;
+        position: absolute;
+        top: 0;
+        left: -1px;
+    }
+
+    &__path-item--to::before {
+        background-image: url('../img/icons/lithuania.svg');
+    }
+}
+
+.inline {
+    display: inline;
+}
+
+.minus-btn {
+    position: relative;
+    color: #236EFF;
+    cursor: pointer;
+    padding-left: 20px;
+    &::before {
+        content: url(../img/icons/minus-btn.svg);
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        left: 0;
+        top: 2px;
+    }
+}
+
+.transport-search-results__cost-counter {
+    margin-top: 22px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+}
+
+.transport-search-results__cost-counter:active {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: underline;
+}
+
+.transport-order-card__info-car {
+    
+}
+
+.transport-order-card__label--urgent {
+    @media (max-width: 575px) {
+        width: 90px;
+    }
+}

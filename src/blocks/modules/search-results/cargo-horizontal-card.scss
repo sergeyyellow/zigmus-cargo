@@ -1,0 +1,31 @@
+.cargo-horizontal-order-card {
+    
+    &__path-item:not(:last-child) {
+        &::after {
+            content: url(../img/icons/path-line--bigger.svg);
+            position: absolute;
+            top: -1px;
+            left: 94px;
+        }
+    }
+
+    &__city-descr input {
+        width: 100px;
+    }
+
+    &__last-column {
+        width: 240px;
+    }
+
+    &__settings-btn {
+        margin: 10px 0 0 20px;
+    }
+}
+
+.horizontal-order-card__column-documents {
+
+    .cargo-horizontal-order-card__car {
+        padding-left: 40px;
+
+    }
+}

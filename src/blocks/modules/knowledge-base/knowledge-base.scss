@@ -1,0 +1,113 @@
+.knowledge-base {
+    &__cols {
+        display: flex;
+        margin-top: 120px;
+        margin-bottom: 80px;
+        @media (max-width: 768px) {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-areas: "block-a" "block-b";
+            grid-row-gap: 20px;
+        }
+    }
+    &__start-working-col {
+        width: 360px;
+        height: 100%;
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0px 10px 40px rgba(0, 4, 41, 0.05);
+        margin-right: 30px;
+        @media (max-width: 768px) {
+            grid-area: block-a;
+            width: 100%;
+        }
+    }
+
+    &__start-working-block {
+        padding: 20px;
+            position: relative;
+            &::after {
+                content: url(../img/icons/arrows/blue-arrow.svg);
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                transition: .3s all;
+            }
+            &--active {
+                &::after {
+                    transform: rotate(180deg);
+                    top: 23px;
+                }
+            }
+        
+    }
+
+    &__start-working-block+&__start-working-block {
+        border-top: 1px solid rgba(35, 110, 255, 0.3)
+    }
+
+    &__start-working-block-content {
+        padding-top: 20px;
+        display: none;
+        &--active {
+            display: block;
+        }
+    }
+
+    &__start-working-block-list {
+        & li {
+            font-size: 10px;
+            opacity: 0.4;
+        }
+        & li+li {
+            margin-top: 10px;
+        }
+    }
+
+    &__question-descr-col {
+        width: 750px;
+        @media (max-width: 768px) {
+            grid-area: block-b;
+            width: 100%;
+        }
+    }
+
+    &__question-descr {
+        background: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0px 10px 40px rgba(0, 4, 41, 0.05);
+        margin-bottom: 20px;
+        padding: 20px;
+        position: relative;
+            &::after {
+                content: url(../img/icons/arrows/blue-arrow.svg);
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                transition: .3s all;
+            }
+            &--active {
+                &::after {
+                    transform: rotate(180deg);
+                    top: 23px;
+                }
+            }
+            &-content {
+                display: none;
+                &--active {
+                    display: block;
+                }
+            }
+            &-img {
+                width: 100%;
+            }
+            &-text-title {
+                margin-bottom: 10px;
+            }
+            &-text {
+                font-size: 14px;
+            }
+    }
+
+    
+}

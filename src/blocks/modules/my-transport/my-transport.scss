@@ -1,0 +1,97 @@
+.p-profile__content.my-transport__content {
+    width: 80%;
+
+    @media (max-width: 1023px) {
+        width: 100%;
+    }
+
+    .my-transport__tabs {
+        padding: 7px 8px;
+    }
+}
+
+.p-profile__add-transport-btn {
+    width: 194px;
+}
+
+.my-transport__params {
+    font-size: 12px;
+}
+
+.my-transport__params-span {
+    display: block;
+    opacity: 0.5;
+}
+
+.transport-card__bottom {
+    border-top: 1px solid rgba(35, 110, 255, .3);
+}
+
+.transport-date {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.transport-date span {
+    opacity: 0.5;
+}
+
+.my-transport__confirm-btn {
+    margin-top: 12px;
+    width: 139px;
+}
+
+.transport-card__middle {
+    height: 22px;
+    border-top: none;
+}
+
+.transport-info--border {
+    border-left: 1px solid rgba(35, 110, 255, .3);
+}
+
+.my-transport__middle-title {
+    padding: 10px;
+}
+
+.transport-card__details {
+    width: 126px;
+}
+
+.transport-card__footer {
+    border-bottom: none;
+}
+
+.profile-card__check {
+    cursor: pointer;
+}
+
+.profile-card__check .display-none {
+    background-color: #fff;
+    border: 1px solid rgba(35, 110, 255, 1);
+    ;
+}
+
+.width--38px {
+    width: 38px;
+}
+
+.check-length {
+    width: 15px;
+    font-weight: 700;
+    color: #343434;
+}
+
+.my-transport__header {
+    @media (max-width: 499px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .p-profile__add-transport-btn {
+        @media (max-width: 499px) {
+            margin-top: 7px;
+        }
+    }
+}

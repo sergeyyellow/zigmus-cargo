@@ -1,0 +1,61 @@
+.logos {
+
+    padding: 40px 0;
+    margin: 0 40px;
+    background: linear-gradient(239.5deg, rgba(255, 255, 255, 0.35) -0.02%, rgba(255, 255, 255, 0) 68.53%),
+        $blue;
+    border-radius: 10px;
+    color: #ffffff;
+
+    &__inner {
+        @include flex;
+        align-items: center;
+    }
+
+    // .logos__left
+
+    &__left {
+        max-width: 212px;
+    }
+
+    // .logos__slider-descr
+
+    &__slider-descr {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    // .logos__slider-arrows
+
+    &__slider-arrows {
+        margin-top: 25px;
+    }
+
+    // .logos__slider
+
+    &__slider {
+        width: 91px * 6 + 60px * 5;
+
+        .slick-list {
+            overflow: hidden;
+        }
+    }
+
+    // .logos__slider-item
+
+    &__slider-item {
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 50px;
+        opacity: .5;
+    }
+
+    &__slider-btn {
+        position: relative;
+        width: 25px;
+        height: 12px;
+        background-color: transparent;
+        margin-right: 18px;
+    }
+}

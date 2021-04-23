@@ -1,0 +1,83 @@
+.container {
+    max-width: $container + 30px * 2;
+    width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+
+}
+
+.wrapper {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.section {
+    padding: 120px 0;
+
+    &--blue {
+        background-color: $light-blue-bg;
+    }
+
+    &__head {
+        &--center {
+            text-align: center;
+        }
+    }
+
+    &__title {
+        font-size: 36px;
+        line-height: 43px;
+
+        &--center {
+            text-align: center;
+        }
+    }
+
+    &__big-title {
+        margin-bottom: 80px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.category {
+    background: $light-blue-bg;
+    border-radius: 20px;
+    font-size: 500px;
+    font-size: 12px;
+    line-height: 12px;
+
+    &--blue-bg {
+        background: linear-gradient(180deg, #b5e0ff 0%, #b2dfff 100%);
+    }
+}
+
+.icon-wrap {
+    @include center;
+    border-radius: 50%;
+    background-color: $blue;
+}
+
+@import '../components/top-page';
+@import '../components/breadcrumbs';
+@import '../components/titles';
+@import '../components/buttons';
+@import '../components/slick';
+@import '../components/logo';
+@import '../components/list';
+@import '../components/tabs';
+@import '../components/field';
+@import '../components/avatar';
+//@import '../components/checkbox';
+@import '../components/video-player';

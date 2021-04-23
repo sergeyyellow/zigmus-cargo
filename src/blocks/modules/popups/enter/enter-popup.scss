@@ -1,0 +1,42 @@
+.enter-popup {
+    display: none;
+    min-height: 422px;
+    position: fixed;
+    top: 140px;
+    @media (max-width: 425px) {
+        width: 300px;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__form {
+        @media (max-width: 425px) {
+            padding: 15px;
+        }
+        &-item {
+            @media (max-width: 425px) {
+                padding: 10px;
+            }
+        }
+    }
+
+    &__form-btn {
+        margin-bottom: 15px;
+    }
+
+    &__forgot-password {
+        display: block;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    &__email-enter {
+        display: none;
+    }
+}
+
+#phone-enter {
+    display: none;
+}

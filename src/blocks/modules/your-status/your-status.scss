@@ -1,0 +1,95 @@
+
+.your-status__content {
+    padding-left: 30px;
+}
+.your-status__block {
+    height: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: rgba(0, 4, 41, 0.05);
+    margin-top: 64px;
+    @media (max-width:768px) {
+        display: block;
+        height: 100%;
+    }
+}
+
+.your-status-block__title {
+    border-bottom: 1px solid rgba(35, 110, 255, 0.3);
+}
+
+.your-status__title-text {
+    padding: 30px;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+
+.your-status-block__content {
+    display: flex;
+    @media (max-width:768px) {
+        display: block;
+    }
+}
+
+.your-status-content__columns {
+    padding-top: 30px;
+    padding-left: 30px;
+    @media (max-width:768px) {
+        padding-right: 30px;
+    }
+}
+
+.your-status-content__columns span {
+    opacity: 0.4;
+    font-size: 13px;
+}
+
+.your-status-content__column {
+    width: 330px;
+    height: 206px;
+    margin-top: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(35, 110, 255, 0.3);
+    @media (max-width:768px) {
+        width: 100%;
+    }
+}
+
+.your-status-content__column p {
+    font-size: 13px;
+    padding: 10px 20px;
+}
+
+.column__text--opacity {
+    opacity: 0.4;
+}
+
+.your-status-column__title {
+    border-bottom: 1px solid rgba(35, 110, 255, 0.3);
+}
+
+.your-status-column__title h4 {
+    font-size: 20px;
+    padding: 20px;
+    width: 104px;
+    margin-left: 34px;
+    position: relative;
+}
+
+.your-status-column__title h4::before {
+    content: url('../img/icons/medal1.svg');
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 25px;
+    left: -20px;
+}
+
+.your-status-column__item:not(:last-child) {
+    border-bottom: 1px solid rgba(35, 110, 255, 0.3);
+}
+
+.your-status-content__column--inactive {
+    opacity: 0.3;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../_head.html')
+
+<body>
+
+    <div class="wrapper">
+        @@include('../../blocks/modules/header/_header.html')
+
+        <div class="p-profile">
+            <div class="container cargo-open-card__container">
+                <div class="p-profile__wrapper cargo-open-card__wrapper">
+                    <div class="cargo-open-card__content">
+                        <div class="cargo-open-card__content-item-1">
+
+                            <p class="return-list-text">Вернуть список</p>
+
+                            <div class="cargo-open-card__filter-block">
+                                <select class="select-drop-list" name="drop-list" id="drop-list">
+                                    <option value="kilo_1">По километражу+</option>
+                                    <option value="kilo_2">По километражу+_1</option>
+                                    <option value="kilo_3">По километражу+_2</option>
+                                </select>
+
+                                <p class="open-filter--button">Открыть фильтр</p>
+                            </div>
+
+                            <div class="order-list">
+                                @@include('../../blocks/modules/order-approve/_order-approve-card.html')
+                                @@include('../../blocks/modules/order-approve/_order-approve-card.html')
+                                @@include('../../blocks/modules/order-approve/_order-approve-card.html')
+                                @@include('../../blocks/modules/order-approve/_order-approve-card.html')
+                            </div>
+
+                        </div>
+
+                        <div class="cargo-open-card__content-item-2 cargo-open-card__map">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            @@include('../../blocks/modules/footer/_footer.html')
+
+            <div class="overlay">
+                @@include('../../blocks/modules/popups/_popups.html')
+            </div>
+        </div>
+
+        @@include('../_js.html')
+
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+.employees {
+
+    width: 946px;
+    padding-top: 64px;
+    margin-left: 15px;
+    margin-bottom: 80px;
+    @media (max-width: 768px) {
+        margin-left: 0;
+    }
+
+    // .employees__header
+
+    &__header {
+        @include flex;
+        align-items: center;
+        margin-bottom: 40px;
+        @media (max-width: 425px) {
+            display: block;
+        }
+    }
+
+    // .employees__title
+
+    &__title {}
+
+    // .employees__btn
+
+    &__btn {
+        height: 40px;
+        padding: 3px 15px;
+        font-size: 16px;
+        @media (max-width: 425px) {
+            margin-top: 10px;
+        }
+    }
+
+    // .employees__cards
+
+    &__cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        @media (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    // .employees__card
+
+    &__card {
+        background: #FFFFFF;
+        border: 1px solid rgba(35, 110, 255, 0.3);
+        border-radius: 10px;
+        padding: 20px;
+    }
+}
+
+.employee-card {
+
+    // .employee-card__inner
+
+    &__inner {
+        @include flex;
+    }
+
+    &__avatar {
+        width: 48px;
+        height: 48px;
+        background-size: 40px 40px;
+    }
+
+    // .employee-card__info
+    &__info {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    // .employee-card__info-content
+    &__info-content {
+        font-weight: 500;
+        margin-left: 12px;
+    }
+
+    // .employee-card__name-age
+    &__name-age {
+        display: flex;
+        align-items: center;
+    }
+
+    // .employee-card__name
+    &__name {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    // .employee-card__age
+    &__age,
+    &__id {
+        font-size: 10px;
+        line-height: 20px;
+        opacity: .5;
+    }
+
+    &__age {
+        margin-left: 6px;
+    }
+
+    // .employee-card__id
+    &__id {
+        font-size: 10px;
+        line-height: 20px;
+        margin-bottom: 6px;
+    }
+
+    // .employee-card__rate
+    &__rate {}
+
+    // .employee-card__btn
+    &__btn {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid #F2F2F2;
+        @include center;
+        cursor: pointer;
+
+        span {
+            width: 2px;
+            height: 2px;
+            border-radius: 50%;
+            background-color: rgba($dark, .5);
+            margin: 0 1px;
+        }
+    }
+
+    &__tels-title {
+        font-size: 14px;
+        line-height: 12px;
+        color: rgba(52, 52, 52, 0.5);
+
+        margin-bottom: 10px;
+    }
+
+    // .employee-card__tels
+    &__tel {
+        font-size: 15px;
+        //line-height: 50px;
+        @media (max-width: 425px) {
+            display: block;
+        }
+    }
+
+    // .employee-card__tel
+    &__tel+&__tel {
+        margin-left: 10px;
+        @media (max-width: 425px) {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+    }
+}
+
+.profile__employee-form.grid .employee__field {
+    height: 61px;
+    @media (max-width: 768px) {
+        margin-top: 10px;
+    }
+}
+
+.employee__field .employee-number {
+    @media (max-width: 370px) {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,298 @@
+
+<div class="filters top-page__filters">
+    <div class="filters__main">
+        <div class="filters__top">
+            <div class="filters__top-left flex">
+                <div class="tabs filters__tabs tabs--mini">
+                    <a href="#" class="tab filters__tab tab--mini tab--active">Фильтр</a>
+                    <a href="#" class="tab filters__tab tab--mini">Сохраненные фильтры</a>
+                </div>
+                <button class="filters__reset-btn" type="reset">Сбросить фильры</button>
+            </div>
+            <div class="filters__top-buttons flex">
+                <button id="save-filter" class="filters__top-btn filters__save-btn">Сохранить фильтр</button>
+                <button id="get-notifications" class="filters__top-btn filters__notifications-btn">Получать
+                    уведомления</button>
+            </div>
+        </div>
+        <div class="filters__line">
+            <div class="filters__line-item filter-item flex from-label">
+                <div class="filter-item__icon">A</div>
+                <div class="filter-item__content">
+                    <div class="filter-item__title">
+                        Откуда?
+                    </div>  
+                    <div class="filter-item__descr">
+                        <p class="filter-item__value">Беларусь</p>
+                        <button class="reset-filter-btn filter-item__reset-btn"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="filters__line-item filter-item flex where-label">
+                <div class="filter-item__icon">B</div>
+                <div class="filter-item__content">
+                    <div class="filter-item__title">
+                        Куда?
+                    </div>
+                    <div class="filter-item__descr">
+                        <p class="filter-item__value">Польша</p>
+                        <button class="reset-filter-btn filter-item__reset-btn"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="filters__line-item filter-item flex">
+                <div class="filter-item__icon">
+                    <img src="img/icons/filters/weight.svg" alt="">
+                </div>
+                <div class="filter-item__content">
+                    <div class="filter-item__title">
+                        Вес, объем?
+                    </div>
+                    <div class="filter-item__descr">
+                        <div class="filter-item__descr-item">
+                            <select class="filter-style" name="" id="" role="checkbox">
+                                <option value="" class="field__value">
+                                    20 тонн
+                                </option>
+                                <option value="" class="field__value">
+                                    20 тонн
+                                </option>
+                            </select>
+                        </div>
+                        <div class="filter-item__descr-item">
+                            <select class="filter-style" name="" id="" role="checkbox">
+                                <option value="" class="field__value">
+                                    83м3
+                                </option>
+                                <option value="" class="field__value">
+                                    83м3
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filters__line-item filter-item flex">
+                <div class="filter-item__icon">
+                    <img src="img/icons/filters/delivery-truck.svg" alt="">
+                </div>
+                <div class="filter-item__content">
+                    <div class="filter-item__title">
+                        Тип кузова?
+                    </div>
+                    <div class="filter-item__descr">
+                        <select class="filter-style" name="" id="" role="checkbox">
+                            <option value="" class="field__value">
+                                Тентовый
+                            </option>
+                            <option value="" class="field__value">
+                                Тентовый
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="filters__line-item filter-item flex">
+                <div class="filter-item__icon">
+                    <img src="img/icons/filters/calendar.svg" alt="">
+                </div>
+                <div class="filter-item__content">
+                    <div class="filter-item__title">
+                        Загрузка
+                    </div>
+                    <div class="filter-item__descr">
+                        <input class="datepicker-here label datepicker-here--width" type="text" name="date" id=""
+                                                        placeholder="Указать дату" readonly>
+                    </div>
+                </div>
+            </div>
+            <!-- <button class="button top-filters__btn">Найти груз</button> -->
+        </div>
+
+        <div class="minus-btn top-filters__less-btn">Меньше параметров</div>
+        <div class="plus-btn top-filters__more-btn none">Больше параметров</div>
+
+        <form action="#" class="filters__more main-filters">
+            <div class="main-filters__cols">
+                <div class="main-filters__col cargo-filter">
+                    <div class="main-filters__item">
+                        <div class="main-filters__item-title">Груз</div>
+                        <div class="field main-filters__item-field">
+                            <label class="label">Вид</label>
+                            <select class="filter-style" name="" id="" role="checkbox">
+                                <option value="belarus" class="field__value">
+                                    Стройматериалы
+                                </option>
+                                <option value="russia" class="field__value">
+                                    Стройматериалы
+                                </option>
+                                <option value="poland" class="field__value">
+                                    Стройматериалы
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <label class="cargo-filter__danger">
+                        <input class="filter-style" type="checkbox" name="dangerous-cargo" id="">
+                        <span>Опасные грузы ADR</span>
+                    </label>
+                    <div class="cargo-filter__checkboxes oval-checkboxes flex">
+                        <label class="oval-check cargo-filter__checkbox">
+                            <span>
+                                С догрузом
+                                <button class="reset-filter-btn"></button>
+                            </span>
+                            <input class="filter-style" type="checkbox" name="" id="">
+                        </label>
+                        <label class="oval-check cargo-filter__checkbox">
+                            <span>
+                                Туда и обратно
+                                <button class="reset-filter-btn"></button>
+                            </span>
+                            <input class="filter-style" type="checkbox" name="" id="">
+                        </label>
+                        <label class="oval-check cargo-filter__checkbox">
+                            <span>
+                                Только с фото
+                                <button class="reset-filter-btn"></button>
+                            </span>
+                            <input class="filter-style" type="checkbox" name="" id="">
+                        </label>
+                        <label class="oval-check cargo-filter__checkbox">
+                            <span>
+                                Постоянный
+                                <button class="reset-filter-btn"></button>
+                            </span>
+                            <input class="filter-style" type="checkbox" name="" id="">
+                        </label>
+                    </div>
+                </div>
+                <div class="main-filters__col">
+                    <div class="main-filters__item">
+                        <div class="main-filters__item-title">Загрузка</div>
+                        <div class="field main-filters__item-field">
+                            <label class="label">Вид</label>
+                            <select class="filter-style" name="" id="" role="checkbox" role="checkbox">
+                                <option value="belarus" class="field__value">
+                                    Верхняя, задняя
+                                </option>
+                                <option value="russia" class="field__value">
+                                    Верхняя, задняя
+                                </option>
+                                <option value="poland" class="field__value">
+                                    Верхняя, задняя
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="main-filters__item">
+                        <div class="main-filters__item-title">
+                            Подача
+                        </div>
+                        <div class="field main-filters__item-field main-filters__radio-field radio-field">
+                            <label class="radio-field__label">
+                                <span>С оплатой</span>
+                                <input class="filter-style" type="radio" name="supply" id="">
+                            </label>
+                            <label class="radio-field__label">
+                                <span>Без оплаты</span>
+                                <input class="filter-style" type="radio" name="supply" id="">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-filters__col">
+                    <div class="main-filters__item">
+                        <div class="main-filters__item-title">Оплата</div>
+                        <div class="field main-filters__item-field">
+                            <label class="label">Вид</label>
+                            <select class="filter-style" name="" id="" role="checkbox">
+                                <option value="belarus" class="field__value">
+                                    Безнал
+                                </option>
+                                <option value="russia" class="field__value">
+                                    Нал
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="main-filters__item">
+                        <div class="main-filters__item-title">
+                            Форма собственности
+                        </div>
+                        <div class="field main-filters__item-field">
+                            <label class="label">Вид</label>
+                            <select class="filter-style" name="" id="" role="checkbox">
+                                <option value="belarus" class="field__value">
+                                    Юр. лицо
+                                </option>
+                                <option value="russia" class="field__value">
+                                    Физ. лицо
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-filters__col main-filters__aside-radio">
+                    <div class="main-filters__item-title">
+                        Торг
+                    </div>
+                    <div class="field main-filters__item-field main-filters__radio-field radio-field">
+                        <label class="radio-field__label">
+                            <span>Есть</span>
+                            <input class="filter-style radio-field__input" type="radio" name="bargain" id="">
+                        </label>
+                        <label class="radio-field__label">
+                            <span>Нет</span>
+                            <input class="filter-style radio-field__input" type="radio" name="bargain" id="">
+                        </label>
+                    </div>
+                    <button id="search-button" class="search-btn">Поиск</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <div class="filters__footer">
+        <h6 class="filters__footer-title">
+            Дополнительно
+        </h6>
+        <div class="filters__footer-items oval-checkboxes flex">
+            <label class="oval-check">
+                <span>
+                    Только компании с высоким рейтингом
+                    <button class="reset-filter-btn"></button>
+                </span>
+                <input class="filter-style" type="checkbox" name="" id="">
+            </label>
+            <label class="oval-check">
+                <span>
+                    Только с ценой
+                    <button class="reset-filter-btn"></button>
+                </span>
+                <input class="filter-style" type="checkbox" name="" id="">
+            </label>
+            <label class="oval-check">
+                <span>
+                    Только компании с отзывами
+                    <button class="reset-filter-btn"></button>
+                </span>
+                <input class="filter-style" type="checkbox" name="" id="">
+            </label>
+            <label class="oval-check">
+                <span>
+                    Еще что-то
+                    <button class="reset-filter-btn"></button>
+                </span>
+                <input class="filter-style" type="checkbox" name="" id="">
+            </label>
+            <label class="oval-check">
+                <span>
+                    Еще что-то
+                    <button class="reset-filter-btn"></button>
+                </span>
+                <input class="filter-style oval-check__input" type="checkbox" name="" id="">
+            </label>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+.list {
+    
+    &__title {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    &__item {
+        display: flex;
+    }
+
+    &__item-icon {
+        @include center;
+        border-radius: 50%;
+        background-color: $blue;
+    }
+
+    &__item-title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    &__item-text {
+        font-size: 14px;
+        line-height: 22px;
+        opacity: .7;
+    }
+}

@@ -1,0 +1,48 @@
+// flex
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin column {
+    display: flex;
+    flex-direction: column;
+}
+
+// positioning
+@mixin centerX {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin centerY {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin centerXY {
+    @include centerX;
+    @include centerY;
+    transform: translate(-50%, -50%);
+}
+
+@mixin reset-btn {
+    content: '';
+    position: absolute;
+    @include centerY;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(35, 110, 255, 0.5);
+    background-image: url('../img/icons/reset-close.svg');
+    background-position: center;
+    background-size: 4px 4px;
+    background-repeat: no-repeat;
+}

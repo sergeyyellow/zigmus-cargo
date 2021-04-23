@@ -1,0 +1,80 @@
+.add-transport__tittle--sizes {
+    max-width: 380px;
+}
+
+.add-trans-auction__field--margin {
+    margin-bottom: 20px;
+}
+
+.add-trans-auction__dimensions--border {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.add-trans-auction__form--padding {
+    padding-bottom: 0px;
+}
+
+.add-trans-auction__col--margin {
+    margin-left: 0px;
+}
+
+.forgot-password-popup__reset-by-email {
+    color: blue;
+    text-decoration: underline;
+}
+
+
+// Frow-Where input style
+
+.field--flex {
+    display: flex;
+}
+
+.from__container {
+    display: flex;
+    align-items: center;
+}
+
+.from-icon {
+    height: 24px;
+}
+
+.from-content {
+    margin-left: 10px;
+}
+
+.from-content input {
+    display: none;
+    height: 24px;
+}
+
+.from-content label:valid {
+    display: block;
+    background: transparent !important;
+}
+
+.from-content label {
+    cursor: pointer;
+}
+
+.from-label {
+    cursor: pointer;
+}
+
+.from-content label {
+    font-size: 12px;
+    line-height: 12px;
+    opacity: 0.5;
+}
+
+.add__plus {
+    display: none;
+}
+
+// reset-popup 
+
+.reset-popup__email-reset,
+.forgot-password-popup__reset-by-phone {
+    display: none;
+}

@@ -1,0 +1,372 @@
+.shame-board {
+
+    &.section {
+        @media (max-width: 767px) {
+            padding: 60px 0;
+        }
+    }
+
+    // .shame-board__wrapper
+
+    &__wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+
+    // .shame-board__header
+
+    &__header {
+        @include flex;
+        align-items: center;
+        padding: 30px 30px 30px 35px;
+
+        @media (max-width: 767px) {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 15px;
+            justify-items: center;
+
+            padding: 30px;
+        }
+
+        @media (max-width: 499px) {
+            padding: 15px;
+        }
+
+        .shame-board__btn {
+            @media (max-width: 424px) {
+                width: 200px;
+            }
+        }
+    }
+
+    // .shame-board__block
+
+    &__block {
+        background: #ffffff;
+        box-shadow: 0px 10px 40px rgba(0, 4, 41, 0.05);
+        border-radius: 8px;
+
+        &:nth-child(1),
+        &:nth-child(2) {
+            grid-column: 1 / 4;
+        }
+    }
+
+    // .shame-board__categories
+
+    &__categories {}
+
+    // .shame-board__category
+
+    &__category {
+        display: inline-block;
+        padding: 8px 15px;
+
+        @media (max-width: 424px) {
+            display: block;
+            margin-bottom: 8px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__category+&__category {
+        margin-left: 15px;
+
+        @media (max-width: 424px) {
+            margin-left: 0;
+            text-align: center;
+        }
+    }
+
+    // .shame-board__btn
+
+    &__btn {
+        width: 212px;
+        height: 54px;
+        padding: 10px 24px;
+    }
+
+    // .shame-board__main
+
+    &__main {
+        @include flex;
+        padding: 12px 67px 0 30px;
+
+        @media (max-width: 767px) {
+            display: grid;
+            padding: 0 30px;
+            text-align: center;
+        }
+
+        @media (max-width: 499px) {
+            padding: 0 15px;
+        }
+
+        .section__title {
+            @media (max-width: 499px) {
+                font-size: 32px;
+                line-height: 38px;
+            }
+            
+            @media (max-width: 424px) {
+                font-size: 26px;
+                line-height: 32px;
+            }
+        }
+    }
+
+    // .shame-board__main-content
+
+    &__main-content {
+        max-width: 641px;
+        padding: 30px 0;
+        align-self: center;
+
+        @media (max-width: 499px) {
+            padding: 15px 0;
+        }
+    }
+
+    // .shame-board__text
+
+    &__text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 15px;
+        margin-top: 30px;
+    }
+
+    // .shame-board__img
+
+    &__main-img {
+        width: 366px;
+        max-width: 100%;
+        height: auto;
+
+        @media (max-width: 991px) {
+            width: 300px;
+        }
+
+        @media (max-width: 767px) {
+            margin: 0 auto;
+        }
+
+        @media (max-width: 424px) {
+            width: 260px;
+        }
+    }
+
+    // .shame-board__card
+
+    &__card {
+        min-height: 357px;
+    }
+}
+
+.shame-board__content-card {
+    grid-column: 1 / 4;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+
+    @media (max-width: 767px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 499px) {
+        grid-template-columns: 1fr;
+    }
+
+    .shame-board__block {
+        grid-column: auto;
+    }
+}
+
+.shame-card {
+    // .shame-card__header
+
+    &__header {
+        padding: 20px;
+
+        @media (max-width: 991px) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    // .shame-card__logo
+
+    &__logo {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+
+    // .shame-card__header-info
+
+    &__header-info {
+        margin-left: 15px;
+
+        @media (max-width: 991px) {
+            margin-left: 0;
+            margin-top: 5px;
+        }
+    }
+
+    // .shame-card__name
+
+    &__name {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    &__header-descr {
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 20px;
+        opacity: 0.5;
+    }
+
+    // .shame-card__category
+
+    &__category {
+        margin-bottom: 2px;
+
+        @media (max-width: 991px) {
+            line-height: initial;
+            margin-top: 2px;
+        }
+    }
+
+    // .shame-card__properties
+
+    &__properties {
+        color: $blue;
+
+        span {
+            border-bottom: 1px solid rgba($blue, 0.5);
+        }
+    }
+
+    // .shame-card__item
+
+    &__item {
+        padding: 15px 20px;
+    }
+
+    &__item+&__item {
+        border-top: 1px solid rgba($blue, 0.3);
+    }
+
+    // .shame-card__reason
+
+    &__reason {
+        @media (max-width: 991px) {
+            padding: 0 20px 15px;
+        }
+    }
+
+    // .shame-card__item-title
+
+    &__item-title {
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+
+    // .shame-card__item-text
+
+    &__item-text {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    // .shame-card__reason-text
+
+    &__reason-text {
+        max-width: 242px;
+        color: rgba(52, 52, 52, 0.5);
+    }
+
+    &__from {
+        font-weight: 500;
+        line-height: 15px;
+    }
+
+    // .shame-card__from
+
+    &__from-id {
+        position: relative;
+        font-size: 12px;
+        padding-left: 21px;
+        margin-bottom: 10px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background-color: $blue;
+            background-image: url('../img/icons/id-check.svg');
+            background-position: center;
+            background-size: 7px 7px;
+            background-repeat: no-repeat;
+        }
+
+        span {
+            color: rgba(52, 52, 52, 0.5);
+        }
+    }
+
+    &__from-info {
+        font-size: 10px;
+        opacity: 0.5;
+    }
+
+    // .shame-card__footer
+
+    &__footer {
+        @include flex;
+        align-items: center;
+        font-weight: 500;
+        line-height: 24px;
+
+        @media (max-width: 991px) {
+            display: grid;
+            text-align: center;
+            justify-content: center;
+        }
+    }
+
+    // .shame-card__footer-nums
+
+    &__footer-nums {
+        font-size: 10px;
+        line-height: 14px;
+        opacity: 0.5;
+
+        @media (max-width: 991px) {
+            margin-top: 4px;
+        }
+    }
+
+    // .shame-card__add-complaint
+
+    &__add-complaint {
+        font-size: 14px;
+        color: $blue;
+
+        @media (max-width: 991px) {
+            grid-row: 1 / 2;
+        }
+    }
+}

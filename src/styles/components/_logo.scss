@@ -1,0 +1,17 @@
+.logo {
+
+    // .logo__img
+
+    &__img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    // .logo__descr
+
+    &__descr {
+        font-size: 10px;
+        line-height: 13px;
+        color: #fff;
+    }
+}

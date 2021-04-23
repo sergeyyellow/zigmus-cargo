@@ -1,0 +1,15 @@
+.cargo-auction-won-card {
+    &__bet {
+        padding: 0;
+        background: rgba(232, 250, 232, 1);
+    }
+    &__status {
+        color: rgba(6, 198, 2, 1);
+        padding-top: 5px;
+    }
+    &__time-to-accept {
+        padding: 0 10px 15px;
+        font-size: 10px;
+        opacity: 0.4;
+    }
+}

@@ -1,0 +1,150 @@
+.register-popup {
+    display: none;
+    width: 750px;
+    min-height: 630px;
+    top: 10px;
+    @media (max-width: 768px) {
+        width: 95%;
+    }
+
+    &__inner {
+        @media (max-width: 768px) {
+            display: grid;
+        }
+    }
+
+    &__block {
+        padding: 50px 40px;
+    }
+
+    // .register-popup__form
+
+    &__form {
+        width: 50%;
+        box-shadow: 0px 10px 40px rgba(0, 4, 41, 0.05);
+        padding-right: 40px;
+        @media (max-width: 768px) {
+             width: 100%;
+        }
+        @media (max-width: 425px) {
+            padding: 15px
+        }
+    }
+
+    // .register-popup__title
+
+    &__title {
+        // .register-popup__title--white
+    }
+
+    &__form-item {}
+
+    &__form-label {}
+
+    &__form-input {}
+
+    // .register-popup__email-link
+
+    &__link {}
+
+    // .register-popup__btn
+
+    &__form-btn {
+        margin-bottom: 15px;
+    }
+
+    &__form-confirm {
+        @include center;
+        line-height: 18px;
+        margin-bottom: 30px;
+
+        .check-style {
+            width: 10px;
+            height: 10px;
+            border: 1px solid rgba($blue, 0.6);
+            border-radius: 2px;
+        }
+    }
+
+    &__form-confirm-check {
+        margin-right: 8px;
+    }
+
+    &__enter-btn {
+        height: 42px;
+        border-radius: 4px;
+        padding-left: 18px;
+        padding-right: 18px;
+        font-weight: 700;
+        line-height: 50px;
+        margin: 0 auto;
+    }
+
+    // .register-popup__blue-block
+
+    &__blue-block {
+        width: 50%;
+        padding-left: 40px;
+        background: $blue;
+        color: #ffffff;
+        @media (max-width :768px) {
+            width: 100%;
+        }
+    }
+
+    &__blue-block-title {
+        max-width: 250px;
+    }
+
+    // .register-popup__benefits
+
+    &__benefits {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    // .register-popup__benefits-item
+
+    &__benefits-item {
+        align-items: center;
+
+        span {
+            position: relative;
+            display: block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #fff;
+            margin-right: 20px;
+
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                @include centerXY;
+            }
+
+            &:before {
+                display: block;
+                width: 26px;
+                height: 26px;
+                border: 1px solid $blue;
+                border-radius: 50%;
+            }
+
+            &:after {
+                width: 14px;
+                height: 10px;
+                background-image: url("../img/icons/blue-check.svg");
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+    &__benefits-item+&__benefits-item {
+        margin-top: 10px;
+    }
+}

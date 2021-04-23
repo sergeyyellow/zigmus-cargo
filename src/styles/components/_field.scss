@@ -1,0 +1,51 @@
+.field {
+    background: $light-blue-bg;
+    border: 1px solid rgba(35, 110, 255, 0.15);
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    //padding: 10px 20px;
+
+    &--transparent {
+        background-color: transparent;
+    }
+
+    &__value {
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+
+        button {
+            margin-left: 3px;
+        }
+    }
+}
+
+.label {
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    opacity: 0.5;
+    margin-bottom: 3px;
+}
+
+.white-input {
+    background: #ffffff;
+    border-radius: 6px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.phone-field {
+    .jq-selectbox__select {
+        height: 20px;
+    }
+
+    input {
+        width: auto;
+    }
+}

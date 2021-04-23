@@ -1,0 +1,25 @@
+.cargo-auction-outbid-card {
+    &__status {
+        position: relative;
+        font-size: 12px;
+        color: rgba(35, 110, 255, 1);
+        padding-left: 13px;
+        padding-top: 5px;
+        &::before {
+            content: url(../img/icons/arrows/datepicker-arrow-left.svg);
+            position: absolute;
+            top: 5px;
+            left: 0;
+            transform: rotate(90deg);
+        }
+    }
+
+    &__bet-btn {
+        font-size: 10px;
+        padding: 5px;
+        border-radius: 6px;
+        border: 1px solid rgba(35, 110, 255, 0.3);
+        margin-top: 10px;
+    
+    }
+}

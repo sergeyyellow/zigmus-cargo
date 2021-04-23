@@ -1,0 +1,264 @@
+.horizontal-order-card {
+    width: 1140px;
+    height: 215px;
+    background: #FFFFFF;
+    border: 1px solid rgba(35, 110, 255, 0.3);
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 20px;
+
+    &__column:not(:last-child) {
+        border-right: 1px solid rgba(35, 110, 255, 0.3);
+    }
+
+    &__column h5 {
+        font-size: 14px;
+        padding: 20px 15px 10px;
+    }
+
+    &__column li {
+        font-size: 12px;
+        padding: 0 20px 10px 30px;
+        position: relative;
+    }
+    
+    &__column span {
+        opacity: 0.4;
+    }
+
+    &__column:first-child {
+        width: 396px;
+    }
+
+    &__header {
+        border-bottom: 1px solid rgba(35, 110, 255, 0.3);
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    &__labels {
+        margin-top: 20px;
+    }
+
+    &__title {
+        padding-top: 6px;
+    }
+
+    &__title-info {
+        padding-top: 6px;
+    }
+
+    &__path {
+        padding: 10px 0 0 25px;
+        width: 270px;
+    }
+
+    &__path-header {
+        justify-content: start;
+    }
+
+    &__path-link {
+        padding-top: 3px;
+    }
+
+    &__path-from-to {
+        padding-right: 10px;
+    }
+
+    &__path-items {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__path-item {
+        position: relative;
+        padding-left: 25px;
+        font-weight: 600;
+        font-size: 12px;
+    }
+
+    &__path-item:not(:last-child){
+        &::after {
+            content: url(../img/icons/path-line--bigger.svg);
+            position: absolute;
+            top: -1px;
+            left: 50px;
+        }
+
+    }
+
+    &__path-item--from::before {
+        content: url(../img/icons/belarus.png);
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: -4px;
+        left: 0;
+    }
+    &__path-item--gap::before {
+        content: url(../img/icons/poland.png);
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: -4px;
+        left: 0;
+    }
+    &__path-item--to::before {
+        content: url(../img/icons/lithuania.svg);
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: -4px;
+        left: 0;
+    }
+
+    &__column-dates {
+        width: 173px;
+    }
+
+    &__column-car {
+        width: 172px;
+    }
+
+    &__column-documents {
+        width: 154px;
+    }
+
+    &__column-title {
+        display: flex;
+        border-bottom: 1px solid rgba(35, 110, 255, 0.3);
+    }
+
+    &__action-head {
+        margin-bottom: 0;
+        padding: 30px 0 10px 7px;
+    }
+
+    &__dates-info li::before {
+        content: url(../img/icons/clock.svg);
+        position: absolute;
+        top: 1px;
+        left: 15px;
+    }
+
+    &__car-img::before {
+        content: url(../img/icons/delivery-truck.svg);
+        position: absolute;
+        top: -1px;
+        left: 15px;
+        width: 14px;
+        height: 14px;
+    }
+    &__weight-img::before {
+        content: url(../img/icons/weight.svg);
+        position: absolute;
+        top: 0px;
+        left: 15px;
+    }
+    &__dimensions-img::before {
+        content: url(../img/icons/size-box.svg);
+        position: absolute;
+        top: 1px;
+        left: 15px;
+    }
+    &__additionaly-img::before {
+        content: url(../img/icons/additionaly.svg);
+        position: absolute;
+        top: 1px;
+        left: 15px;
+    }
+    &__loading-img::before {
+        content: url(../img/icons/loading.svg);
+        position: absolute;
+        top: 2px;
+        left: 15px;
+    }
+    &__sizes-img::before {
+        content: url(../img/icons/diagonal-resize.svg);
+        position: absolute;
+        top: 1px;
+        left: 15px;
+    }
+
+    &__alert-img::before {
+        content: url(../img/icons/alert.svg);
+        position: absolute;
+        top: -1px;
+        left: 13px;
+        
+    }
+    &__documents-img::before {
+        content: url(../img/icons/documents.svg);
+        position: absolute;
+        top: 1px;
+        left: 15px;
+    }
+
+    &__box-img::before {
+        content: url(../img/icons/box.svg);
+        position: absolute;
+        top: 0;
+        left: 15px;
+    }
+
+    &__car-info li {
+        padding-left: 35px;
+    }
+
+    &__response-btn {
+        width: 223px;
+        height: 36px;
+        color: #FFFFFF;
+        background: #FF6118;
+        border-radius: 4px;
+        margin: 10px 7px;
+        font-size: 12px;
+    }
+
+    &__rating {
+        width: 223px;
+        height: 29px;
+        background: #F5F9FF;
+        margin: auto;
+        border-radius: 5px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__rating p {
+        position: relative;
+        padding-right: 14px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: -17px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #236eff;
+            background-image: url(../img/icons/id-check.svg);
+            background-size: 7px 7px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__price {
+        padding-right: 5px;
+    }
+
+    &__settings-btn {
+        margin-top: 10px;
+    }
+}
+
+.add-more-path-btn {
+    color: #236EFF;
+    font-size: 10px;
+    padding-left: 2px;
+}

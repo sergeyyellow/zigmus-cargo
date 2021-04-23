@@ -1,0 +1,15 @@
+.auction-cargo-order-card {
+    
+    &__bet-btns {
+        align-items: baseline;
+    }
+
+    &__column-price {
+        margin-left: 15px;
+        padding: 15px;
+    }
+}
+
+#auction-cargo-order-card {
+    display: none;
+}

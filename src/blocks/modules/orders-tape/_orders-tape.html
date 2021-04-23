@@ -1,0 +1,26 @@
+<section class="section orders-tape section--blue">
+    <div class="container">
+        <h3 class="title big-title section__title section__big-title orders-tape__title section__title--center">
+            Живая лента заказов
+        </h3>
+        <div class="tabs orders-tape__tabs">
+            <a href="#orders-tape-tab-1" class="tab orders-tape__tab tab--active">Грузы</a>
+            <a href="#orders-tape-tab-2" class="tab orders-tape__tab">Транспорт</a>
+        </div>
+
+        <div id="orders-tape-tab-1" class="tabs__content orders-tape__content grid tabs__content--active">
+            @@include('../order-card/_order-card.html')
+            @@include('../order-card/_order-card.html')
+            @@include('../order-card/_order-card.html')
+            @@include('../order-card/_order-card.html')
+        </div>
+        <div id="orders-tape-tab-2" class="tabs__content orders-tape__content grid">
+            @@include('../order-card/_order-card.html')
+            @@include('../order-card/_order-card.html')
+            @@include('../order-card/_order-card.html')
+            @@include('../order-card/_order-card.html')
+        </div>
+
+        <a href="#" class="button section-btn orders-tape__btn">Все грузы</a>
+    </div>
+</section>

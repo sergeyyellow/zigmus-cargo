@@ -1,0 +1,435 @@
+.price-calc {
+    background-color: #FFF;
+}
+
+.price-calc__content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    @media (max-width: 1023px) {
+        grid-template-columns: 100%;
+    }
+
+    &-item-1 {
+        padding-top: 40px;
+        padding-bottom: 90px;
+        padding-right: 30px;
+
+        @media (max-width: 1023px) {
+            padding-bottom: 40px;
+            padding-right: 0;
+        }
+
+        .breadcrumbs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .search-transport--button {
+                border: 1px solid #236EFF;
+                box-sizing: border-box;
+                border-radius: 4px;
+
+                font-weight: bold;
+                font-size: 12px;
+
+                color: #236EFF;
+
+                display: inline-block;
+                padding: 6px 14px;
+                cursor: pointer;
+
+                justify-self: end;
+                align-self: center;
+            }
+        }
+
+        .price-calc__block {
+            display: block;
+            width: 100%;
+
+            margin-top: 48px;
+            padding: 30px;
+
+            background: #FFFFFF;
+            box-shadow: 0px 10px 40px rgba(0, 4, 41, 0.05);
+            border-radius: 8px;
+
+            @media (max-width: 1023px) {
+                max-width: 700px;
+                margin: 0 auto;
+            }
+
+            @media (max-width: 499px) {
+                padding: 15px;
+            }
+
+            .h1-text {
+                font-weight: bold;
+                font-size: 24px;
+
+                margin-bottom: 20px;
+            }
+
+            .from-and-where-block {
+                display: grid;
+                grid-template-columns: 50% 50%;
+
+                background: rgba(245, 249, 255, 0.1);
+                border: 1px solid rgba(35, 110, 255, 0.15);
+                box-sizing: border-box;
+                border-radius: 6px;
+
+                @media (max-width: 499px) {
+                    grid-template-columns: 100%;
+                }
+
+                .from {
+                    display: grid;
+                    grid-template-columns: 24px auto;
+                    align-items: center;
+
+                    border-right: 1px solid rgba(35, 110, 255, 0.15);
+                    padding: 15px 0 15px 25px;
+
+                    @media (max-width: 499px) {
+                        border-right: none;
+                        border-bottom: 1px solid rgba(35, 110, 255, .15);
+                    }
+
+                    >div {
+                        margin-left: 10px;
+                    }
+
+                    .from-text {
+                        font-weight: 500;
+                        font-size: 12px;
+                        color: rgba(52, 52, 52, .5);
+
+                        padding-bottom: 6px;
+
+                        .add--button {
+                            margin-left: 3px;
+                        }
+                    }
+
+                    .from-text--active {
+                        font-weight: 500;
+                        font-size: 14px;
+
+                        .undo--button {
+                            vertical-align: -1px;
+                            margin-left: 3px;
+
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .where {
+                    display: grid;
+                    grid-template-columns: 24px auto;
+                    align-items: center;
+
+                    padding: 15px 0 15px 25px;
+
+                    position: relative;
+
+                    &::before {
+                        content: '';
+
+                        position: absolute;
+                        top: 50%;
+
+                        -webkit-transform: translateY(-50%);
+                        -ms-transform: translateY(-50%);
+                        transform: translateY(-50%);
+
+                        left: -8px;
+
+                        width: 16px;
+                        height: 16px;
+
+                        border-radius: 50%;
+                        background-color: #236eff;
+                        background-image: url(../img/icons/filters/exchange.svg);
+                        background-position: center;
+                        background-size: 8px 8px;
+                        background-repeat: no-repeat;
+
+                        @media (max-width: 499px) {
+                            left: unset;
+                            top: 0;
+                            right: 20px;
+                        }
+                    }
+
+                    >div {
+                        margin-left: 10px;
+                    }
+
+                    .where-text {
+                        font-weight: 500;
+                        font-size: 12px;
+                        color: rgba(52, 52, 52, .5);
+                        padding-bottom: 6px;
+
+                        .add--button {
+                            margin-left: 3px;
+                        }
+                    }
+
+                    .where-text--active {
+                        font-weight: 500;
+                        font-size: 14px;
+
+                        .undo--button {
+                            vertical-align: -1px;
+                            margin-left: 3px;
+
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            .weight-block {
+                display: grid;
+                grid-template-columns: 24px auto;
+                align-items: center;
+
+                width: 100%;
+
+                background: rgba(245, 249, 255, 0.1);
+                border: 1px solid rgba(35, 110, 255, 0.15);
+                box-sizing: border-box;
+                border-radius: 6px;
+
+                padding: 15px 0 15px 25px;
+
+                margin-top: 10px;
+                margin-bottom: 10px;
+
+                >div {
+                    margin-left: 10px;
+                }
+
+                .weight-text {
+                    font-weight: 500;
+                    font-size: 12px;
+                    color: rgba(52, 52, 52, .5);
+                    padding-bottom: 6px;
+
+                    .add--button {
+                        margin-left: 3px;
+                    }
+                }
+
+                .weight-text--active {
+                    font-weight: 500;
+                    font-size: 14px;
+
+                    .undo--button {
+                        vertical-align: -1px;
+                        margin-left: 3px;
+
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .type-of-cargo-block {
+                background: url('../../../img/icons/arrows/blue-arrow.svg') no-repeat right 20px center;
+
+                display: grid;
+                grid-template-columns: 24px auto;
+                align-items: center;
+
+                width: 100%;
+
+                // background: rgba(245, 249, 255, 0.1);
+                border: 1px solid rgba(35, 110, 255, 0.15);
+                box-sizing: border-box;
+                border-radius: 6px;
+
+                padding: 15px 0 15px 25px;
+
+                margin-top: 10px;
+                margin-bottom: 10px;
+
+                >div {
+                    margin-left: 10px;
+                }
+
+                .type-of-cargo-text {
+                    font-weight: 500;
+                    font-size: 12px;
+                    color: rgba(52, 52, 52, .5);
+                    padding-bottom: 6px;
+
+                    .add--button {
+                        margin-left: 3px;
+                    }
+                }
+
+                .type-of-cargo--active {
+                    font-weight: 500;
+                    font-size: 14px;
+
+                    .undo--button {
+                        vertical-align: -1px;
+                        margin-left: 3px;
+
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .find-out-the-cost--button {
+                background: #FF6118;
+                box-shadow: 0px 4px 20px rgba(255, 107, 0, 0.35);
+                border-radius: 8px;
+
+                font-weight: 600;
+                font-size: 16px;
+                text-align: center;
+
+                color: #FFFFFF;
+                cursor: pointer;
+
+                display: inline-block;
+                margin-top: 15px;
+                padding: 18px 35px;
+
+                @media (max-width: 424px) {
+                    display: block;
+                    padding: 15px 30px;
+                }
+            }
+
+            //price calculation result
+            .result {
+                width: 100%;
+                padding: 20px;
+
+                background: linear-gradient(201.82deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 98.62%), #236EFF;
+                border-radius: 8px;
+
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-gap: 15px 30px;
+
+                @media (max-width: 499px) {
+                    grid-column-gap: 15px;
+                }
+
+                @media (max-width: 424px) {
+                    grid-template-columns: 100%;
+                }
+
+                .result-name {
+                    font-weight: 500;
+                    font-size: 12px;
+
+                    color: #FFFFFF;
+                    margin-bottom: 5px;
+                }
+
+                .result-text {
+                    font-weight: bold;
+                    font-size: 30px;
+
+                    color: #FFFFFF;
+                }
+
+                .result-info-text {
+                    font-weight: 300;
+                    font-size: 12px;
+
+                    color: #FFFFFF;
+
+                    max-width: 136px;
+                }
+            }
+
+            .result-buttons {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 15px 30px;
+
+                align-items: center;
+
+                text-align: center;
+                margin-top: 25px;
+
+                @media (max-width: 499px) {
+                    grid-template-columns: 100%;
+                    max-width: 270px;
+                    margin: 20px auto;
+                }
+
+                .new-transport-text--button {
+                    background: #FF6118;
+                    box-shadow: 0px 4px 20px rgba(255, 107, 0, 0.35);
+                    border-radius: 8px;
+
+                    font-weight: 600;
+                    font-size: 16px;
+
+                    color: #FFFFFF;
+                    padding: 15px 20px;
+
+                    cursor: pointer;
+                    // max-width: 215px;
+                    // justify-self: center;
+                }
+
+                .recalculate--button {
+                    border: 1px solid #236EFF;
+                    border-radius: 8px;
+
+                    box-sizing: border-box;
+                    filter: drop-shadow(0px 4px 20px rgba(255, 107, 0, 0.35));
+
+                    font-weight: 600;
+                    font-size: 16px;
+
+                    color: #236EFF;
+                    padding: 15px 20px;
+
+                    cursor: pointer;
+                    // max-width: 215px;
+                    // justify-self: center;
+                }
+            }
+
+            .add-cargo-text--button {
+                font-weight: 500;
+                font-size: 14px;
+
+                color: #236EFF;
+                margin-top: 20px;
+
+                cursor: pointer;
+
+                &::before {
+                    content: url('../../../img/icons/blue-add-button.svg');
+                    margin-right: 6px;
+                    vertical-align: -2px;
+                }
+            }
+        }
+    }
+
+    .price-calc__map>div {
+        width: 100%;
+        height: 100%;
+        min-height: 400px;
+
+        background-color: green;
+        opacity: .4;
+        color: #000;
+
+        text-align: center;
+    }
+}

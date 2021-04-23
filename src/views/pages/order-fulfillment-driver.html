@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('../_head.html')
+
+<body>
+
+    <div class="order-fulfillment-cargo__wrapper">
+
+        @@include('../../blocks/modules/header/_header.html')
+
+        <div class="p-profile">
+            <div class="container">
+                <div class="p-profile__wrapper">
+                    <div class="order-fulfillment-cargo__content order-fulfillment-driver__content">
+
+                        <nav class="breadcrumbs">
+                            <a class="breadcrumbs__item" href="#">
+                                <svg width="11" height="8" viewBox="0 0 11 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.646446 3.64645C0.451184 3.84171 0.451184 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646446 3.64645ZM11 3.5L1 3.5V4.5L11 4.5V3.5Z"
+                                        fill="#343434" />
+                                </svg>
+                                Хлебные крошки
+                            </a>
+                        </nav>
+
+                        <div class="order-fulfillment-cargo__wrapper">
+                            <div class="grid-container">
+                                <div class="grid-container__item grid-container__item-one">
+                                    <img class="photo-of-goods-transportation"
+                                        src="img/bg/photo-of-goods-transportation.jpg"
+                                        alt="Photo of goods transportation">
+
+                                    <div class="informing-block">
+                                        <div class="informing-block__text">
+                                            <h2>Здесь информация о адресе и времени, загрузки и разгрузки, если
+                                                будем выводить</h2>
+                                        </div>
+
+                                        <h3 class="additional-agreements">Дополнительные договоренности</h3>
+                                        <form class="additional-agreements-form" action="#" method="GET">
+                                            <div class="additional-agreements__item">
+                                                <div>
+                                                    <input id="delivery" type="checkbox" name="delivery">
+                                                    <label for="delivery"><span class="gray-text">Подача:</span> В
+                                                        тот же день</label>
+                                                </div>
+                                                <div class="additional-agreements__item-mt-10">
+                                                    <input id="commission" type="checkbox" name="commission" checked>
+                                                    <label for="commission"><span class="gray-text">Коммиссия:</span>
+                                                        Всю на
+                                                        себя</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="additional-agreements__item">
+                                                <div>
+                                                    <input id="discount_second_order" type="checkbox"
+                                                        name="discount_second_order">
+                                                    <label for="discount_second_order">Дам скидку на 2-й
+                                                        заказ</label>
+                                                </div>
+                                                <div class="additional-agreements__item-mt-10">
+                                                    <input id="fast_delivery" type="checkbox" name="fast_delivery">
+                                                    <label for="fast_delivery">Доставлю быстрее</label>
+                                                </div>
+                                            </div>
+
+                                            <p class="additional-agreements--button-submit">Подтвердить</p>
+                                        </form>
+
+                                        <div class="informing-block__benefits-and-tips">
+                                            <p class="benefits-and-tips-text">Текст с преимуществами и советами, почему
+                                                стоит вести диалог через +
+                                                иконки, которые
+                                                описывают быстрые преимущества</p>
+                                        </div>
+
+                                        <div class="reviews-block">
+                                            <p class="reviews-block__date">16 декабря 2020</p>
+
+                                            <div class="reviews-block__grid-review">
+                                                <img class="reviews-block__grid-review__user-icon"
+                                                    src="img/icons/avatars/girl-user-icon.svg" alt="Girl user icon"
+                                                    width="50" height="50">
+                                                <p class="reviews-block__grid-review__user-name">Настя</p>
+                                                <p class="reviews-block__grid-review__user-review">Здравствуйте!
+                                                    Начинаю оформлять
+                                                    документы. Все документы прикреплю в вкладку. И сброшу
+                                                    подтверждение. Как проверите
+                                                    кликните</p>
+
+                                                <div class="reviews-block__grid-review__user-time-and-status">
+                                                    <p class="reviews-block__grid-review__user-time">10:25</p>
+                                                    <img class="reviews-block__grid-review__user-status-review"
+                                                        src="img/icons/read-message.svg" alt="Status review">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="block-documents-issued">
+                                            <img src="img/icons/icon-document.svg" alt="Icon document">
+                                            <p class="documents-executed">Документы оформлены</p>
+                                            <p class="block-documents-issued__confirmed">Подтверждено</p>
+                                        </div>
+
+                                        <div class="reviews-block">
+                                            <div class="reviews-block__grid-review">
+                                                <img class="reviews-block__grid-review__user-icon"
+                                                    src="img/icons/avatars/full-avatar.svg" alt="Male user icon"
+                                                    width="50" height="50">
+                                                <p class="reviews-block__grid-review__user-name">Егор</p>
+                                                <p class="reviews-block__grid-review__user-review">Все отлично! 17 в
+                                                    8 утра буду на
+                                                    месте. Спасибо</p>
+
+                                                <div class="reviews-block__grid-review__user-time-and-status">
+                                                    <p class="reviews-block__grid-review__user-time">10:25</p>
+                                                    <img class="reviews-block__grid-review__user-status-review"
+                                                        src="img/icons/read-message.svg" alt="Status review">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <hr class="revocation-date-separator">
+
+                                        <div class="reviews-block">
+                                            <p class="reviews-block__date">17 декабря 2020</p>
+
+                                            <div class="reviews-block__grid-review">
+                                                <img class="reviews-block__grid-review__user-icon"
+                                                    src="img/icons/avatars/full-avatar.svg" alt="Male user icon"
+                                                    width="50" height="50">
+                                                <p class="reviews-block__grid-review__user-name">Егор</p>
+                                                <p class="reviews-block__grid-review__user-review">Добрый день, груз
+                                                    принял, загрузка
+                                                    прошла. Фото прилагаю <img class="img-cargo-delivered"
+                                                        src="img/bg/photo-review-cargo-delivered.jpg"
+                                                        alt="Photo review cargo delivered" width="172" height="94">
+                                                </p>
+
+                                                <div class="reviews-block__grid-review__user-time-and-status">
+                                                    <p class="reviews-block__grid-review__user-time">18:25</p>
+                                                    <img class="reviews-block__grid-review__user-status-review"
+                                                        src="img/icons/read-message.svg" alt="Status review">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="reviews-block">
+                                            <div class="reviews-block__grid-review">
+                                                <img class="reviews-block__grid-review__user-icon"
+                                                    src="img/icons/avatars/girl-user-icon.svg" alt="Girl user icon"
+                                                    width="50" height="50">
+                                                <p class="reviews-block__grid-review__user-name">Настя</p>
+                                                <p class="reviews-block__grid-review__user-review">Здравствуйте! Все
+                                                    поняла, ждем на
+                                                    разгрузке. Хорошей дороги!</p>
+
+                                                <div class="reviews-block__grid-review__user-time-and-status">
+                                                    <p class="reviews-block__grid-review__user-time">10:25</p>
+                                                    <img class="reviews-block__grid-review__user-status-review"
+                                                        src="img/icons/read-message.svg" alt="Status review">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="block-on-my-way">
+                                            <img class="block-on-my-way-icon" src="img/icons/icon-on-my-way.svg"
+                                                alt="On my way" width="39" height="39">
+                                            <p class="on-my-way-text">В пути</p>
+
+                                            <div class="block-on-my-way__confirm-and-reject">
+                                                <p class="confirm">Подтвердить</p>
+                                                <p class="reject">Отклонить</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="reviews-block">
+                                            <div class="reviews-block__grid-review">
+                                                <img class="reviews-block__grid-review__user-icon"
+                                                    src="img/icons/avatars/full-avatar.svg" alt="Male user icon"
+                                                    width="50" height="50">
+                                                <p class="reviews-block__grid-review__user-name">Егор</p>
+                                                <p class="reviews-block__grid-review__user-review">Настя!
+                                                    Подтвердите пожалуйста статус.
+                                                </p>
+
+                                                <div class="reviews-block__grid-review__user-time-and-status">
+                                                    <p class="reviews-block__grid-review__user-time">10:25</p>
+                                                    <img class="reviews-block__grid-review__user-status-review"
+                                                        src="img/icons/read-message.svg" alt="Status review">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="block-leave-a-review">
+                                            <p class="block-leave-a-review__text">Оставьте отзыв</p>
+
+                                            <form class="block-leave-a-review__form" action="#" method="GET">
+                                                <div class="block-leave-a-review__grid-container">
+                                                    <div>
+                                                        <textarea name="review" id="review"
+                                                            placeholder="Введите текст...">Все отлично. Деньги перевели сразу. Описание соответствовало реальности</textarea>
+                                                    </div>
+
+                                                    <div class="block-leave-a-review__form__grid-container-2">
+                                                        <p class="block-leave-a-review__your-mark">Ваша оценка:</p>
+
+                                                        <div class="block-leave-a-review__rating-area">
+                                                            <input type="radio" id="star-5" name="rating" value="5">
+                                                            <label for="star-5" type="radio" value="5"></label>
+
+                                                            <input type="radio" id="star-4" name="rating" value="4"
+                                                                checked>
+                                                            <label for="star-4" type="radio" value="4"></label>
+
+                                                            <input type="radio" id="star-3" name="rating" value="3">
+                                                            <label for="star-3" type="radio" value="3"></label>
+
+                                                            <input type="radio" id="star-2" name="rating" value="2">
+                                                            <label for="star-2" type="radio" value="2"></label>
+
+                                                            <input type="radio" id="star-1" name="rating" value="1">
+                                                            <label for="star-1" type="radio" value="1"></label>
+                                                        </div>
+
+                                                        <p class="block-leave-a-review__form__submit">Оставить отзыв</p>
+
+                                                        <a class="block-leave-a-review__form__a-question" href="#">Зачем
+                                                            оставлять
+                                                            отзыв?</a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+
+                                        <div class="why-leave-a-review">
+                                            <h5>Зачем нужно оставлять отзыв</h5>
+
+                                            <div class="why-leave-a-review__grid-container">
+                                                <ul>
+                                                    <li>Вы повышаете свои метрики, что позволяет вам быстрее найти
+                                                        партнера</li>
+                                                    <li>Вы помогаете выбрать другим пользователям партнера</li>
+                                                    <li>Еще выгода</li>
+                                                </ul>
+
+                                                <div class="discount-block">
+                                                    <p>Оставьте отзыв и получите скидку 30% на следующий заказ</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <hr class="why-leave-a-review-separator">
+
+                                        <div class="order-translation">
+                                            <p class="order-translation-text">Перевести заказ в этап <span>в пути</span>
+                                            </p>
+
+                                            <form class="on-my-way-form" action="#" method="GET">
+                                                <textarea name="on-my-way-textarea" id="on-my-way-form__textarea"
+                                                    placeholder="Введите текст..."></textarea>
+
+                                                <p class="order-translation--button-submit">Отправить</p>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-container__item grid-container__item-two">
+
+                                    <div class="contacts-block">
+
+                                        <div class="contacts-block__header">
+                                            <h4 class="contacts-block__h4">Контакты</h4>
+
+                                            <img class="drop-arrow" src="../../img/icons/arrows/aside-drop.svg"
+                                                alt="Drop arrow">
+                                        </div>
+
+                                        <div class="contacts-block__content">
+                                            <div class="contacts-block__user-information">
+                                                <div class="contacts-block__grid-container-user">
+                                                    <img src="img/logo/sta-logo.png" alt="Hirer icon" width="60"
+                                                        height="60">
+                                                    <div class="information-about-the-company">
+                                                        <p class="hirer-name">(ООО) «СТА Логистик»</p>
+                                                        <p class="company-type">Логистическая компания</p>
+                                                        <a href="#" class="company-details">Реквизиты</a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="contacts-block__grid-container-user">
+                                                    <img src="img/icons/avatars/girl-user-icon.svg" alt="Seller icon"
+                                                        width="60" height="60">
+                                                    <div class="seller-information">
+                                                        <p class="seller-name">Настя</p>
+                                                        <p class="works-with-you">С вами работает</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="contacts-block__grid-container-phone-and-email">
+                                                <p class="phone-text">Телефоны</p>
+
+                                                <p class="first-phone-number">+375 17 270-49-79</p>
+                                                <p class="second-phone-number">+375 17 270-49-79</p>
+
+                                                <p class="email-text">E-mail</p>
+
+                                                <p class="email-adress">19+@stalogistic.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="payment-block">
+                                        <div class="payment-block__header">
+                                            <h4 class="payment-block__h4">Оплата</h4>
+
+                                            <img class="drop-arrow" src="../../img/icons/arrows/aside-drop.svg"
+                                                alt="Drop arrow">
+                                        </div>
+
+                                        <div class="payment-block__content">
+                                            <p class="prepayment">Предоплата 30%</p>
+
+                                            <div class="payment-block__order-fulfillment-process">
+                                                <img src="img/icons/payment-first-point.svg" alt="Payment first point"
+                                                    width="32" height="32">
+                                                <p>Заказ подтвержден</p>
+                                                <img src="img/icons/payment-second-point.svg" alt="Payment second point"
+                                                    width="32" height="32">
+                                                <p>Документы оформлены</p>
+                                                <img src="img/icons/payment-third-point.svg" alt="Payment third point"
+                                                    width="32" height="32">
+                                                <p>Груз загружен</p>
+                                                <img src="img/icons/payment-fourth-point.svg" alt="Payment fourth point"
+                                                    width="32" height="32">
+                                                <p>Догруз (Если есть)</p>
+                                                <img src="img/icons/payment-of-the-fifth-point.svg"
+                                                    alt="Payment of the fifth point" width="32" height="32">
+                                                <p>В пути</p>
+                                                <img src="img/icons/payment-of-the-sixth-point.svg"
+                                                    alt="Payment of the sixth point" width="32" height="32">
+                                                <p>Доставлен, разружен</p>
+                                            </div>
+
+                                            <p class="payment-block__cancel-the-order">Отменить заказ</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="documents-block">
+                                        <div class="documents-block__header">
+                                            <h4 class="documents-block__h4">Документы (Фактуры)</h4>
+
+                                            <img class="drop-arrow" src="../../img/icons/arrows/aside-drop.svg"
+                                                alt="Drop arrow">
+                                        </div>
+
+                                        <div class="documents-block__content">
+                                            <div class="documents-block__list-of-added-documents">
+                                                <img src="img/icons/icon-document-pdf.svg" alt="Icon document pdf"
+                                                    width="25" height="25">
+                                                <p>Договор (0,53 мб.)</p>
+                                                <img src="img/icons/icon-document-pdf.svg" alt="Icon document pdf"
+                                                    width="25" height="25">
+                                                <p>ТТН (0,53 мб.)</p>
+                                                <img src="img/icons/icon-document-pdf.svg" alt="Icon document pdf"
+                                                    width="25" height="25">
+                                                <p>Счет-фактура (0,53 мб.)</p>
+                                                <img src="img/icons/icon-document-pdf.svg" alt="Icon document pdf"
+                                                    width="25" height="25">
+                                                <p>Акт-приема (0,53 мб.)</p>
+                                                <img src="img/icons/icon-document-pdf.svg" alt="Icon document pdf"
+                                                    width="25" height="25">
+                                                <p>Пропуск</p>
+                                            </div>
+
+                                            <p class="documents-block__add-button">Добавить</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="help-block">
+                                        <div class="help-block__header">
+                                            <h4 class="help-block__h4">Помощь</h4>
+
+                                            <img class="drop-arrow" src="../../img/icons/arrows/aside-drop.svg"
+                                                alt="Drop arrow">
+                                        </div>
+
+                                        <div class="help-block__info">
+                                            
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            @@include('../../blocks/modules/footer/_footer.html')
+
+            <div class="overlay">
+
+                @@include('../../blocks/modules/popups/_popups.html')
+
+            </div>
+        </div>
+    </div>
+
+    @@include('../_js.html')
+
+</body>
+
+</html>

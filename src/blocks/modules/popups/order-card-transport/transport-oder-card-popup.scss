@@ -1,0 +1,69 @@
+.transport-order-card-popup {
+    &__path-item--from,
+    &__path-item--gap,
+    &__path-item--to {
+        position: relative;
+        &::after {
+            content: url(../img/icons/belarus.svg);
+            position: absolute;
+            top: 0;
+            left: -31px;
+        }
+    }
+    &__path-item--gap::after {
+        content: url(../img/icons/poland.svg);
+    }
+    &__path-item--to::after {
+        content: url(../img/icons/lithuania.svg);
+        left: -30px;
+    }
+
+    &__car-info,
+    &__dates,
+    &__documents {
+        font-size: 12px;
+        & li {
+            position: relative;
+            padding-left: 20px;
+            padding-bottom: 10px;
+            &::before {
+                left: 0;
+            }
+        }
+    }
+
+    &__dates li::before {
+        content: url(../img/icons/clock.svg);
+        position: absolute;
+    }
+
+    &__column-price {
+        margin-left: 15px;
+        & a {
+            padding-right: 20px;
+        }
+    }
+
+    &__label {
+        margin-top: 10px;
+        margin-left: 15px;
+        
+    }
+
+    &__car-img {
+        width: 100%;
+    }
+}
+
+.tracking-label {
+    @media (max-width: 545px) {
+        width: 100px;
+    }
+}
+#bet-popup {
+    display: none;
+}
+
+#transport-order-card {
+    display: none;
+}

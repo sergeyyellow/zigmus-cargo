@@ -1,0 +1,145 @@
+.about-us {
+    &__zigmus-stats {
+        background: linear-gradient(239.5deg, rgba(255, 255, 255, 0.35) -0.02%, rgba(255, 255, 255, 0) 68.53%), #236EFF;
+        border-radius: 10px;
+        padding: 60px;
+        max-width: 1140px;
+        margin: 160px auto 0;
+        @media (max-width: 1200px) {
+            margin: 160px 30px 0 30px;
+        }
+        &-title {
+            color: #fff;
+            font-size: 36px;
+            @media (max-width: 768px) {
+            }
+        }
+        &-info {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            margin-top: 20px;
+            @media (max-width: 1023px) {
+                grid-template-columns: auto auto;
+            }
+            @media (max-width: 768px) {
+                grid-template-columns: auto;
+            }
+        }
+        &-item {
+            margin-top: 40px;
+            color: #fff;
+            &-number {
+                font-size: 35px;
+                padding-bottom: 5px;
+            }
+        }
+    }
+
+    &__zigmus-descr {
+        &-text {
+            padding-top: 10%;
+            padding-left: 200px;
+            @media (max-width: 1023px) {
+                padding-left: 60px;
+            }
+            @media (max-width: 768px) {
+                width: 80%;
+            }
+            @media (max-width: 545px) {
+                padding-left: 30px;
+            }
+            & p {
+                width: 585px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                @media (max-width: 768px) {
+                    width: 100%;
+                }
+            }
+        }
+        &-title{
+            font-size: 36px;
+            width: 473px;
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+        }
+        &-btn {
+            padding: 20px 30px;
+            background: #FF6118;
+            box-shadow: 0px 4px 20px rgba(255, 107, 0, 0.35);
+            border-radius: 8px;
+            color: #fff;
+            @media (max-width: 545px) {
+                width: 260px;
+            }
+        }
+    }
+    &__company-mission-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 100px;
+        margin-top: 20px;
+        @media (max-width: 768px) {
+            display: block;
+        }
+    } 
+    &__company-mission-title {
+        font-size: 36px;
+        padding-bottom: 30px;
+    }
+    &__company-mission-descr {
+        width: 488px;
+        @media (max-width: 1023px) {
+            width: 100%;
+        }
+    }
+    &__company-mission-text {
+        margin-right: 30px;    
+    }
+    &__company-mission-img {
+        @media (max-width: 768px) {
+            margin-top: 20px;
+        }
+        & img {
+            border-radius: 8px;
+            width: 100%;
+        }
+    }
+    &__renewal {
+        background: #fff;
+    }
+    &__renewal-tabs {
+        width: max-content;
+    }
+    &__renewal-title {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+    &__renewal-descr {
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    &__renewal-card {
+        margin-right: 30px;
+        @media (max-width: 1200px) {
+            width: 360px;
+        }
+    }
+    &__renewal-card-content {
+        border-bottom: 1px solid rgba(35, 110, 255, 0.3)
+    }
+    &__renewal-card-descr {
+        font-size: 10px;
+        opacity: 0.4;
+        padding: 15px;
+    }
+    &__work-countries {
+        font-size: 36px;
+        width: 537px;
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+    }
+}
+

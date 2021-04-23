@@ -1,0 +1,17 @@
+.top-page {
+    position: relative;
+    background: linear-gradient(239.5deg, rgba(255, 255, 255, 0.45) -0.02%, rgba(255, 255, 255, 0) 68.53%), $blue;
+    border-radius: 0px 0px 20px 20px;
+    padding: 40px 0 120px;
+
+    &__title {
+        margin-top: 64px;
+    }
+
+    &__filters {
+        position: absolute;
+        @include centerX;
+        top: 242px;
+        //width: calc(100% - 30px * 2);
+    }
+}

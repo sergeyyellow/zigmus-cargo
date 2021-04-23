@@ -1,0 +1,202 @@
+.add-auc__flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-auct__head-wrapper {
+    margin: 20px 30px 0 0;
+}
+
+.add-auct__head-wrapper p {
+    font-size: 12px;
+    line-height: 12px;
+
+    padding-bottom: 10px;
+}
+
+.add-auct__template {
+    background: none;
+    width: 240px;
+    height: 54px;
+}
+
+.add-auction__payment-checkboxes {
+    margin: 10px 0 0;
+    @media (max-width:425px) {
+        display: block;
+        
+    }
+}
+
+.add-auction__photo-descr {
+    margin-top: 15px;
+    width: 373px;
+    @media (max-width:1023px) {
+        width: 100%;
+    }
+}
+
+.add-auction__dimensions {
+    padding-bottom: 20px;
+}
+
+.label--margin {
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.add-auction__form-title--sizes {
+    margin-top: 20px;
+}
+
+.add-auction__fields--center {
+    align-items: center;
+}
+
+.add-auction__from-where {
+    padding: 0;
+}
+
+.input--height {
+    height: 39px;
+}
+
+.content--margin {
+    margin-top: 40px;
+}
+
+.add-auction__head {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width:545px) {
+        display: block;
+    }
+}
+
+
+
+.add-auction__head-text--sizes {
+    font-weight: 500;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.add-auction__head-input--sizes {
+    width: 240px;
+    height: 54px;
+}
+
+.add-cargo__tittle--sizes {
+    max-width: 260px;
+}
+
+.added-point {
+    width: 275px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.template__field {
+    border: 1px solid rgba(35,110,255,.15);
+    border-radius: 6px;
+    width: 240px;
+    height: 54px;
+    @media (max-width:1023px) {
+        width: 100%;
+    }
+}
+
+.fields-column__wrapper {
+    padding-left: 20px;
+    padding-top: 25px;
+}
+
+.fields-checkboxes {
+    padding-top: 10px;
+    margin-left: 0;
+}
+
+.add-point--margin {
+    margin-top: 0;
+}
+
+.added-date {
+    margin-top: 20px;
+    width: 275px;
+}
+
+.percent-none {
+    display: none;
+}
+
+.aside-none {
+    display: none;
+}
+
+.p-profile__fullness-percent--adaptive {
+    margin-left: 10px;
+    @media (max-width:1023px) {
+        position: absolute;
+        top: 125px;
+        right: 3%;
+    }
+}
+
+.p-profile__body {
+    @media (max-width:1023px) {
+        width: 100%;
+    }
+}
+
+.profile__form {
+    @media (max-width:768px) {
+        width: 100%;
+        padding-right: 30px;
+    }
+    @media (max-width:545px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.profile__fields-col {
+    @media (max-width:768px) {
+        margin-right: 15px;
+        width: 100%;
+    }
+    
+    @media (max-width:545px) {
+        margin-bottom: 10px;
+    }
+
+}
+
+.gabarits__items {
+    @media (max-width:768px) {
+        display: block;
+    }
+}
+
+.gabarits__item + .gabarits__item {
+    @media (max-width:768px) {
+        margin-left: 0;
+    }
+}
+
+.gabarits__items::before {
+    @media (max-width:768px) {
+        display: none;
+    }
+}
+
+.profile__fields {
+    @media (max-width:545px) {
+        display: block;
+    }
+}
+
+.plus-btn {
+    @media (max-width:545px) {
+        white-space: none;
+    }
+}
